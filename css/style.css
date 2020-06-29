@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;padding: 0;
+    font-family: "Kaushan Script" , cursive !important;
+    overflow-x: hidden;
+}
+/*-----   CSS Variables  ----*/
+:root {
+    --orange: #E77998;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+.navbar {
+    background: #f5f6fa;
+    padding: 0 20px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    display: flex;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+.contact i {
+    margin-right: 15px;
+}
+
+.nav-center a {
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 24px;
+    color: var(--orange);
+}
+.cart-info {
+    display: flex;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid #0f0f0f;
+    padding: 8px 10px;
+}
+.cart-info:hover {
+    background: var(--orange);
+    color: #fff;
+    border: 1px solid var(--orange);
+}
+.cart-info i {
+    margin-right: 10px;
+}
+
+.overlay-img {
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #8181a8a4, #192d2ec5), url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.overlay-img h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: var(--orange);
+}
+.overlay-img button {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 15px;
+    background: transparent;
+    border: 3px solid #0f0f0f;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.overlay-img button:hover {
+    background: var(--orange);
+    border: 3px solid var(--orange);
+    color: #fff;
+}
+/* btn style */
+
+
+
+
+.cart {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    height: 100%;
+    background: rgb(249, 228, 148);
+    padding: 20px;
+    height: 300px;
+    transform: translateX(300px);
+    transition: all .3s ease-in-out;
+}
+.show-cart {
+    width: 300px;
+    transform: translateX(0);
+    height: 100%;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-title {
+    font-size: 17px;
+}
+.cart-item div {
+    padding: 10px;
+}
+.cart-item i {
+    font-size: 17px;
+    transition: all .3s ease-in-out;
+}
+.cart-item i:hover {
+    transform: scale(1.2);
+}
+.cart-item div:nth-child(2) div:nth-child(2) {
+    padding: 0;margin: 0;
+    text-align: center;
+}
+.cart-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.cart-item div .price-item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.cart-total-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+
+/*   CONTENU   ////////////*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.about {
+    display: flex;
+}
+.about div {
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 40px;
+    margin: 20px 0;
+}
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.about button {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #0f0f0f;
+}
+.about img {
+    border: 10px solid #eec201;
+    padding: 10px 0 0 10px;
+
+}
+.about img:hover {
+    border: 10px solid #eec201;
+    padding:0;
+
+}
+
+
+/*   /////////   STORE SECTION  /////*/
+.store-section {
+    background: #ececec;
+    text-align: center;
+}
+.store-section button {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 3px 8px;
+    background: transparent;
+    border: 1px solid #0f0f0f;
+    font-weight: 600;
+    margin: 0 10px;
+}
+.grid {
+    text-align: center;
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+.card {
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
+    opacity: .8;
+}
+.card-img {
+    width: 300px;
+    height: 300px;
+}
+.cake-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-footer .card-title, .card-footer h5 {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
